@@ -37,4 +37,8 @@ const FormContainer = styled.form`
 const Label = styled.label`
 `
 const Input = styled.input`
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  padding: 5px;
+  margin: 5px 0 5px 0;
 `

@@ -17,6 +17,12 @@ const ListPage = () => {
 export default ListPage
 
 const Main = styled.main`
+  padding: 20px;
   display: flex;
-  
+  flex-direction: column;
+  font-family: Lato, sans-serif;
+  color: #4D4A4A;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
 `

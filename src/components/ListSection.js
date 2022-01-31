@@ -5,6 +5,7 @@ import { useDispatch, useSelector, batch } from 'react-redux'
 import list from '../reducers/list'
 import Heading from './Heading'
 import TableHeading from './TableHeading'
+import Button from 'components/Button'
 
 const ListSection = () => {
   const userList = useSelector(store => store.list.users)
@@ -34,6 +35,7 @@ const ListSection = () => {
             <TableContent>
             {user.phone}
             </TableContent>
+            <Button text="X" />
           </ContentSection>
           )}
     </UserSection>
@@ -44,7 +46,9 @@ const ListSection = () => {
 export default ListSection
 
 const Main = styled.main`
-  width: 50%;
+  @media (min-width: 768px) {
+    width: 50%;
+  }
 `
 
 const UserSection = styled.div`
@@ -56,7 +60,10 @@ const HeadingSection = styled.div`
 `
 const ContentSection = styled.div`
   display: flex;
+  font-size: 12px;
 `
 const TableContent = styled.div`
-  width: 33%;
+  width: 25%;
+  border-bottom: solid 1px blue;
+  padding: 5px;
   `

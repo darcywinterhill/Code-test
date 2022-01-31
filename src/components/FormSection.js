@@ -3,12 +3,14 @@ import styled from 'styled-components/macro'
 
 import Heading from 'components/Heading'
 import Form from 'components/Form'
+import Button from 'components/Button'
 
 const FormSection = () => {
   return (
     <Main>
       <Heading text="CREATE NEW" />
       <Form />
+      <Button text="ADD NEW"/>
     </Main>
   )
 }
@@ -16,5 +18,7 @@ const FormSection = () => {
 export default FormSection
 
 const Main = styled.main`
-  width: 50%;
+  @media (min-width: 768px;) {
+    width: 50%;
+  }
 `
