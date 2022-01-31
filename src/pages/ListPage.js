@@ -10,12 +10,13 @@ const ListPage = () => {
     <Main>
       <FormSection />
       <ListSection />
-  </Main>
+    </Main>
   )
 }
 
 export default ListPage
 
 const Main = styled.main`
-
+  display: flex;
+  
 `

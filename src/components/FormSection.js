@@ -2,11 +2,19 @@ import React from 'react'
 import styled from 'styled-components/macro'
 
 import Heading from 'components/Heading'
+import Form from 'components/Form'
 
 const FormSection = () => {
   return (
-    <Heading text="CREATE NEW" />
+    <Main>
+      <Heading text="CREATE NEW" />
+      <Form />
+    </Main>
   )
 }
 
 export default FormSection
+
+const Main = styled.main`
+  width: 50%;
+`
