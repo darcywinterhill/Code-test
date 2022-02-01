@@ -96,4 +96,5 @@ const SubmitButton = styled.button`
   height: 35px;
   margin: 15px 0;
   border: none;
+  cursor: pointer;
 `

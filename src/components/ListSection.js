@@ -19,10 +19,18 @@ const ListSection = () => {
       <Heading text="LIST" />
       <UserSection>
         <HeadingSection>
-          <TableHeading text="FIRST NAME" />
-          <TableHeading text="LAST NAME" />
-          <TableHeading text="PHONE NUMBER" />
-          <TableHeading />
+          <TableHeading
+            width="25%"
+            text="FIRST NAME"
+          />
+          <TableHeading
+            width="25%"
+            text="LAST NAME"
+          />
+          <TableHeading
+            width="50%"
+            text="PHONE NUMBER"
+          />
         </HeadingSection>
         {userList.map(user => 
           <ContentSection
@@ -103,6 +111,7 @@ const DeleteButton = styled.button`
   width: 20px;
   height: 20px;
   border: none;
+  cursor: pointer;
     @media (min-width: 1025px) {
       width: 22px;
       height: 22px;
