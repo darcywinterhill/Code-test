@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react'
 import styled from 'styled-components/macro'
 import { useDispatch, useSelector, batch } from 'react-redux'
@@ -5,7 +6,6 @@ import { useDispatch, useSelector, batch } from 'react-redux'
 import list from '../reducers/list'
 import Heading from './Heading'
 import TableHeading from './TableHeading'
-import Button from 'components/Button'
 
 const ListSection = () => {
   const userList = useSelector(store => store.list.users)
@@ -35,7 +35,9 @@ const ListSection = () => {
             <TableContent>
             {user.phone}
             </TableContent>
-            <Button text="X" />
+            <DeleteButton>
+              <Icon className="fas fa-times" />
+            </DeleteButton>
           </ContentSection>
           )}
     </UserSection>
@@ -50,7 +52,6 @@ const Main = styled.main`
     width: 50%;
   }
 `
-
 const UserSection = styled.div`
   display: flex;
   flex-direction: column;
@@ -67,3 +68,12 @@ const TableContent = styled.div`
   border-bottom: solid 1px blue;
   padding: 5px;
   `
+const DeleteButton = styled.button`
+  background-color: #A42F47;
+  color: white;
+  margin: 5px;
+  padding: 2px 5px;
+  border: none;
+`
+const Icon = styled.i`
+  margin: 0;`

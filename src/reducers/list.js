@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { createSlice } from '@reduxjs/toolkit'
 
 const users = [
@@ -13,11 +14,11 @@ const list = createSlice({
     users
   },
   reducers: {
-    setList: (store, action) => {
+/*     setList: (store, action) => {
       store.users = action.payload
-    },
+    }, */
     addUser: (store, action) => {
-      store.users = [action.payload, ...store.users]
+      store.users = [...store.users, action.payload]
     }
   }
   })
