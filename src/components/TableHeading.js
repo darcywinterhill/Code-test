@@ -17,7 +17,10 @@ const SectionHeading = styled.h2`
   font-size: 10px;
   padding: 5px;
   margin: 0;
-  @media (min-width: 768px) {
-    font-size: 11px;
-  }
+    @media (min-width: 768px) {
+      font-size: 11px;
+    }
+    @media (min-width: 1025px) {
+      font-size: 12px;
+    }
 `

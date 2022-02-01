@@ -16,36 +16,36 @@ const ListSection = () => {
 
   return (
     <Main>
-    <Heading text="LIST" />
-    <UserSection>
-      <HeadingSection>
-        <TableHeading text="FIRST NAME" />
-        <TableHeading text="LAST NAME" />
-        <TableHeading text="PHONE NUMBER" />
-        <TableHeading />
-      </HeadingSection>
-      {userList.map(user => 
-        <ContentSection
-          key={user.id}>
-          <TableContent>
-            {user.firstname}
-          </TableContent>
-          <TableContent>
-            {user.lastname}
-          </TableContent>
-          <TableContent>
-            {user.phone}
-          </TableContent>
-          <ButtonContainer>
-          <DeleteButton
-            type="button"
-            onClick={() => dispatch(list.actions.removeUser(user.id))}>
-            <Icon className="fas fa-times" />
-          </DeleteButton>
-          </ButtonContainer>
-        </ContentSection>
-      )}
-    </UserSection>
+      <Heading text="LIST" />
+      <UserSection>
+        <HeadingSection>
+          <TableHeading text="FIRST NAME" />
+          <TableHeading text="LAST NAME" />
+          <TableHeading text="PHONE NUMBER" />
+          <TableHeading />
+        </HeadingSection>
+        {userList.map(user => 
+          <ContentSection
+            key={user.id}>
+            <TableContent>
+              {user.firstname}
+            </TableContent>
+            <TableContent>
+              {user.lastname}
+            </TableContent>
+            <TableContent>
+              {user.phone}
+            </TableContent>
+            <ButtonContainer>
+            <DeleteButton
+              type="button"
+              onClick={() => dispatch(list.actions.removeUser(user.id))}>
+              <Icon className="fas fa-times" />
+            </DeleteButton>
+            </ButtonContainer>
+          </ContentSection>
+        )}
+      </UserSection>
     </Main>
   )
 }
@@ -70,22 +70,26 @@ const ContentSection = styled.div`
   display: flex;
   align-items: center;
   font-size: 11px;
-  @media (min-width: 768px) {
-    font-size: 11px;
-  }
+    @media (min-width: 768px) {
+      font-size: 11px;
+    }
+    @media (min-width: 1025px) {
+      font-size: 12px;
+    }
 `
 const TableContent = styled.div`
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
   width: 25%;
   height: 25px;
   border-bottom: solid 1px #e2dfdf;
   padding: 5px;
-  overflow-wrap:break-word;
+  overflow-wrap: break-word;
 `
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   width: 25%;
   height: 25px;
   padding: 5px;
@@ -99,6 +103,10 @@ const DeleteButton = styled.button`
   width: 20px;
   height: 20px;
   border: none;
+    @media (min-width: 1025px) {
+      width: 22px;
+      height: 22px;
+    }
 `
 const Icon = styled.i`
   margin: 0;

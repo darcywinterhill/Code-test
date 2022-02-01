@@ -79,9 +79,12 @@ const Input = styled.input`
   padding: 5px;
   margin: 5px 0;
   border: solid 1px #e2dfdf;
-  @media (min-width: 768px) {
-    font-size: 13px;
-  }
+    @media (min-width: 768px) {
+      font-size: 13px;
+    }
+    @media (min-width: 1025px) {
+      font-size: 14px;
+    }
 `
 const SubmitButton = styled.button`
   font-family:'Lato', sans-serif;

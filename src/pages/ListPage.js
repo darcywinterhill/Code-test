@@ -27,4 +27,9 @@ const Main = styled.main`
       flex-direction: row;
       justify-content: space-between;
     }
+    @media (min-width: 1025px) {
+      padding: 20px 40px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 `
