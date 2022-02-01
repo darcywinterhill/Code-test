@@ -1,16 +1,14 @@
 /* eslint-disable */
-import React from 'react'
-import styled from 'styled-components/macro'
-import { useDispatch, useSelector, batch } from 'react-redux'
+import React from "react"
+import styled from "styled-components/macro"
+import { useDispatch, useSelector } from "react-redux"
 
-import list from '../reducers/list'
-import Heading from './Heading'
-import TableHeading from './TableHeading'
+import list from "../reducers/list"
+import Heading from "./Heading"
+import TableHeading from "./TableHeading"
 
 const ListSection = () => {
-  const userList = useSelector(store => store.list.users)
-  console.log(userList)
-
+  const userList = useSelector(store => store.list.users.slice().sort((a, b) => (a.firstname > b.firstname) ? 1 : ((b.firstname > a.firstname) ? -1 : 0)))
 
   const dispatch = useDispatch()
 
@@ -26,20 +24,22 @@ const ListSection = () => {
       {userList.map(user => 
         <ContentSection
           key={user.id}>
-            <TableContent>
+          <TableContent>
             {user.firstname}
-            </TableContent>
-            <TableContent>
+          </TableContent>
+          <TableContent>
             {user.lastname}
-            </TableContent>
-            <TableContent>
+          </TableContent>
+          <TableContent>
             {user.phone}
-            </TableContent>
-            <DeleteButton>
-              <Icon className="fas fa-times" />
-            </DeleteButton>
-          </ContentSection>
-          )}
+          </TableContent>
+          <DeleteButton
+            type="button"
+            onClick={() => dispatch(list.actions.removeUser(user.id))}>
+            <Icon className="fas fa-times" />
+          </DeleteButton>
+        </ContentSection>
+      )}
     </UserSection>
     </Main>
   )
@@ -55,7 +55,7 @@ const Main = styled.main`
 const UserSection = styled.div`
   display: flex;
   flex-direction: column;
-  `
+`
 const HeadingSection = styled.div`
   display: flex;
 `
@@ -67,7 +67,7 @@ const TableContent = styled.div`
   width: 25%;
   border-bottom: solid 1px blue;
   padding: 5px;
-  `
+`
 const DeleteButton = styled.button`
   background-color: #A42F47;
   color: white;
@@ -76,4 +76,5 @@ const DeleteButton = styled.button`
   border: none;
 `
 const Icon = styled.i`
-  margin: 0;`
+  margin: 0;
+`

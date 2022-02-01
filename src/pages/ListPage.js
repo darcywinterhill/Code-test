@@ -1,9 +1,9 @@
 /* eslint-disable */
-import React from 'react'
-import styled from 'styled-components/macro'
+import React from "react"
+import styled from "styled-components/macro"
 
-import FormSection from '../components/FormSection'
-import ListSection from '../components/ListSection'
+import FormSection from "../components/FormSection"
+import ListSection from "../components/ListSection"
 
 const ListPage = () => {
 

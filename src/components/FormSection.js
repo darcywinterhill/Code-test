@@ -1,9 +1,9 @@
 /* eslint-disable */
-import React from 'react'
-import styled from 'styled-components/macro'
+import React from "react"
+import styled from "styled-components/macro"
 
-import Heading from 'components/Heading'
-import Form from 'components/Form'
+import Heading from "components/Heading"
+import Form from "components/Form"
 
 
 const FormSection = () => {

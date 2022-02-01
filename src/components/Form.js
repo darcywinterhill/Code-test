@@ -1,16 +1,16 @@
 /* eslint-disable */
-import React, {useState} from 'react'
-import { useDispatch } from 'react-redux'
-import { v4 as uuidv4 } from 'uuid';
-import styled from 'styled-components/macro'
+import React, {useState} from "react"
+import { useDispatch } from "react-redux"
+import { v4 as uuidv4 } from "uuid"
+import styled from "styled-components/macro"
 
-import list from '../reducers/list'
+import list from "../reducers/list"
 
 const Form = () => {
 
-  const [firstName, setFirstName] = useState('')
-  const [lastName, setLastName] = useState('')
-  const [phone, setPhone] = useState('')
+  const [firstName, setFirstName] = useState("")
+  const [lastName, setLastName] = useState("")
+  const [phone, setPhone] = useState("")
 
   const dispatch = useDispatch()
 
@@ -52,7 +52,7 @@ const Form = () => {
       <Label htmlFor="phone" />
       <Input
         id="phone"
-        type="number"
+        type="text"
         placeholder="Phone number"
         required
         value={phone}
@@ -81,7 +81,7 @@ const Input = styled.input`
 `
 const SubmitButton = styled.button`
   font-family:'Lato', sans-serif;
-  font-weight:700;
+  font-weight: 700;
   background-color: #77DBDC;
   color: white;
   padding: 10px 15px;

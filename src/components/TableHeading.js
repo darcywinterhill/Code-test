@@ -1,6 +1,6 @@
 /* eslint-disable */
-import React from 'react'
-import styled from 'styled-components/macro'
+import React from "react"
+import styled from "styled-components/macro"
 
 const TableHeading = ({ text }) => {
   return (
