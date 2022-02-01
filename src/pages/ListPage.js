@@ -25,5 +25,6 @@ const Main = styled.main`
   color: #4D4A4A;
     @media (min-width: 768px) {
       flex-direction: row;
+      justify-content: space-between;
     }
 `

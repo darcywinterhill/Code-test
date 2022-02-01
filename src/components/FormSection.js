@@ -17,8 +17,9 @@ const FormSection = () => {
 
 export default FormSection
 
-const Main = styled.main`
-  @media (min-width: 768px;) {
+const Main = styled.div`
+  @media (min-width: 768px) {
     width: 50%;
+    padding: 15px;
   }
 `

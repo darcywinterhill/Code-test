@@ -13,5 +13,8 @@ const Heading = ({ text }) => {
 export default Heading
 
 const SectionHeading = styled.h1`
-  font-size: 18px;
+  font-size: 16px;
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
 `

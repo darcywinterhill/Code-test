@@ -14,6 +14,10 @@ export default TableHeading
 
 const SectionHeading = styled.h2`
   width: 25%;
-  font-size: 12px;
+  font-size: 10px;
   padding: 5px;
+  margin: 0;
+  @media (min-width: 768px) {
+    font-size: 11px;
+  }
 `

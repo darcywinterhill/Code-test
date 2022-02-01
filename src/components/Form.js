@@ -75,15 +75,22 @@ const Label = styled.label`
 `
 const Input = styled.input`
   font-family: 'Lato', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   padding: 5px;
-  margin: 5px 0 5px 0;
+  margin: 5px 0;
+  border: solid 1px #e2dfdf;
+  @media (min-width: 768px) {
+    font-size: 13px;
+  }
 `
 const SubmitButton = styled.button`
   font-family:'Lato', sans-serif;
   font-weight: 700;
   background-color: #77DBDC;
   color: white;
-  padding: 10px 15px;
+  text-align: center;
+  width: 120px;
+  height: 35px;
+  margin: 15px 0;
   border: none;
 `
