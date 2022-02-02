@@ -82,7 +82,7 @@ const ContentSection = styled.div`
       font-size: 11px;
     }
     @media (min-width: 1025px) {
-      font-size: 12px;
+      font-size: 14px;
     }
 `
 const TableContent = styled.div`

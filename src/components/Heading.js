@@ -17,4 +17,7 @@ const SectionHeading = styled.h1`
     @media (min-width: 768px) {
       font-size: 18px;
     }
+    @media (min-width: 1025px) {
+      font-size: 20px;
+    }
 `

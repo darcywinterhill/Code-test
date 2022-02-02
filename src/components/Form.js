@@ -31,7 +31,7 @@ const Form = () => {
 
   return (
     <FormContainer onSubmit={onFormSubmit}>
-      <Label htmlFor="firstname" />
+      <Label htmlFor="firstname">
       <Input
         id="firstname"
         type="text"
@@ -40,7 +40,8 @@ const Form = () => {
         value={firstName}
         onChange={(e) => setFirstName(e.target.value)}
       />
-      <Label htmlFor="lastname" />
+      </Label>
+      <Label htmlFor="lastname">
       <Input
         id="lastname"
         type="text"
@@ -49,7 +50,8 @@ const Form = () => {
         value={lastName}
         onChange={(e) => setLastName(e.target.value)}
       />
-      <Label htmlFor="phone" />
+      </Label>
+      <Label htmlFor="phone">
       <Input
         id="phone"
         type="text"
@@ -58,6 +60,7 @@ const Form = () => {
         value={phone}
         onChange={(e) => setPhone(e.target.value)}
       />
+      </Label>
       <SubmitButton type="submit">
         ADD NEW
       </SubmitButton>
@@ -72,18 +75,19 @@ const FormContainer = styled.form`
   flex-direction: column;
 `
 const Label = styled.label`
-`
-const Input = styled.input`
-  font-family: 'Lato', sans-serif;
-  font-size: 12px;
   padding: 5px;
   margin: 5px 0;
   border: solid 1px #e2dfdf;
+`
+const Input = styled.input`
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  border: none;
     @media (min-width: 768px) {
       font-size: 13px;
     }
     @media (min-width: 1025px) {
-      font-size: 14px;
+      font-size: 16px;
     }
 `
 const SubmitButton = styled.button`
@@ -97,4 +101,7 @@ const SubmitButton = styled.button`
   margin: 15px 0;
   border: none;
   cursor: pointer;
+    @media (min-width: 1025px) {
+      font-size: 16px;
+    }
 `
