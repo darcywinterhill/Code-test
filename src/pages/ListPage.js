@@ -28,7 +28,7 @@ const Main = styled.main`
       justify-content: space-between;
     }
     @media (min-width: 1025px) {
-      padding: 20px 40px;
+      padding: 20px 100px;
       flex-direction: row;
       justify-content: space-between;
     }

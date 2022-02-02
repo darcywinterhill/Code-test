@@ -37,6 +37,7 @@ const Form = () => {
         title="first name input">
       <Input
         id="firstname"
+        name="firstname"
         type="text"
         placeholder="First name"
         required
@@ -50,6 +51,7 @@ const Form = () => {
         title="last name input">
       <Input
         id="lastname"
+        name="lastname"
         type="text"
         placeholder="Last name"
         required
@@ -63,6 +65,7 @@ const Form = () => {
         title="phone number input">
       <Input
         id="phone"
+        name="phone"
         type="text"
         placeholder="Phone number"
         required
