@@ -8,6 +8,7 @@ import Heading from "./Heading"
 import TableHeading from "./TableHeading"
 
 const ListSection = () => {
+
   const userList = useSelector(store => store.list.users
     .slice()
     .sort((a, b) => (a.firstname > b.firstname) ? 1 : ((b.firstname > a.firstname) ? -1 : 0)))
@@ -15,7 +16,7 @@ const ListSection = () => {
   const dispatch = useDispatch()
 
   return (
-    <Main>
+    <Wrapper>
       <Heading text="LIST" />
       <UserSection>
         <HeadingSection>
@@ -32,6 +33,7 @@ const ListSection = () => {
             text="PHONE NUMBER"
           />
         </HeadingSection>
+
         {userList.map(user => 
           <ContentSection
             key={user.id}>
@@ -59,13 +61,14 @@ const ListSection = () => {
           </ContentSection>
         )}
       </UserSection>
-    </Main>
+    </Wrapper>
   )
+
 }
 
 export default ListSection
 
-const Main = styled.div`
+const Wrapper = styled.div`
   @media (min-width: 768px) {
     width: 50%;
     padding: 15px;

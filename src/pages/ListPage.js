@@ -13,6 +13,7 @@ const ListPage = () => {
       <ListSection />
     </Main>
   )
+  
 }
 
 export default ListPage

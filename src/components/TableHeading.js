@@ -2,12 +2,17 @@
 import React from "react"
 import styled from "styled-components/macro"
 
-const TableHeading = ({ text, width }) => {
+const TableHeading = ({
+  text,
+  width
+}) => {
+
   return (
     <SectionHeading width={width}>
       {text}
     </SectionHeading>
   )
+
 }
 
 export default TableHeading
