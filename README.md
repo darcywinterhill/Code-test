@@ -1,6 +1,12 @@
 # Code test
 
-
+* Code test to implement a web app similar to an attached mockup.
+* Aurelia/Typescript or other framework (project is written in React).
+* Responsive.
+* The list should be populated with 4 posts when the project is opened.
+* Input fields to add more posts.
+* The list should be sorted by first name.
+* Each row should have a button to delete the post.
 
 ## To open project
 
@@ -10,6 +16,6 @@
 * npm start to open project
 * Open localhost:3000
 
-## Live
+### Live
 
 https://modest-ride-895026.netlify.app/
