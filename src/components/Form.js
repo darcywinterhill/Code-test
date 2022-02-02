@@ -31,7 +31,10 @@ const Form = () => {
 
   return (
     <FormContainer onSubmit={onFormSubmit}>
-      <Label htmlFor="firstname">
+      <Label
+        htmlFor="firstname"
+        aria-label="first name input"
+        title="first name input">
       <Input
         id="firstname"
         type="text"
@@ -41,7 +44,10 @@ const Form = () => {
         onChange={(e) => setFirstName(e.target.value)}
       />
       </Label>
-      <Label htmlFor="lastname">
+      <Label
+        htmlFor="lastname"
+        aria-label="last name input"
+        title="last name input">
       <Input
         id="lastname"
         type="text"
@@ -51,7 +57,10 @@ const Form = () => {
         onChange={(e) => setLastName(e.target.value)}
       />
       </Label>
-      <Label htmlFor="phone">
+      <Label
+        htmlFor="phone"
+        aria-label="phone number input"
+        title="phone number input">
       <Input
         id="phone"
         type="text"

@@ -47,7 +47,9 @@ const ListSection = () => {
             <ButtonContainer>
             <DeleteButton
               type="button"
-              onClick={() => dispatch(list.actions.removeUser(user.id))}>
+              onClick={() => dispatch(list.actions.removeUser(user.id))}
+              aria-label="delete button"
+              title="delete button">
               <Icon className="fas fa-times" />
             </DeleteButton>
             </ButtonContainer>
