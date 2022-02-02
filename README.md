@@ -1,7 +1,7 @@
 # Code test
 
 * Code test to implement a web app similar to an attached mockup.
-* Aurelia/Typescript or other framework (project is written in React).
+* Aurelia/Typescript or other framework of choice (project is written in React).
 * Responsive.
 * The list should be populated with 4 posts when the project is opened.
 * Input fields to add more posts.
