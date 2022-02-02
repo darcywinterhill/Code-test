@@ -91,6 +91,7 @@ const Label = styled.label`
 const Input = styled.input`
   font-size: 12px;
   font-family: 'Lato', sans-serif;
+  width: 100%;
   border: none;
     @media (min-width: 768px) {
       font-size: 13px;

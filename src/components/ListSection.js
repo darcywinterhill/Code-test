@@ -50,7 +50,10 @@ const ListSection = () => {
               onClick={() => dispatch(list.actions.removeUser(user.id))}
               aria-label="delete button"
               title="delete button">
-              <Icon className="fas fa-times" />
+              <Icon
+                className="fas fa-times"
+                aria-hidden="true"
+              />
             </DeleteButton>
             </ButtonContainer>
           </ContentSection>
